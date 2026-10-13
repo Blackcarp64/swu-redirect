@@ -20,9 +20,9 @@ GitHub Custom domain 和根目录 `CNAME` 使用编码：`xn--6kr28k0gz4e0t2h9y1
 | --- | --- | --- |
 | @ | A | 185.199.108.153 |
 | @ | A | 185.199.109.153 |
-| @ | A | 185.199.110.153 |
-| @ | A | 185.199.111.153 |
 | www | CNAME | blackcarp64.github.io |
+
+DNSPod 免费套餐对同一主机名、同一线路的负载均衡记录上限为两条，因此 `@` 使用以上两条 GitHub Pages A 记录；`www` 属于另一个主机名，不占用 `@` 的配额。套餐约束来源： https://docs.dnspod.cn/dns/load-balancing-service/
 
 如果 `@` 或 `www` 已有冲突的 A、AAAA、CNAME 或 URL 转发记录，先移除冲突项，保留其他用途的记录。
 
