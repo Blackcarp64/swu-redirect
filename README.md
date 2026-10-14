@@ -26,6 +26,6 @@ DNSPod 免费套餐对同一主机名、同一线路的负载均衡记录上限�
 
 如果 `@` 或 `www` 已有冲突的 A、AAAA、CNAME 或 URL 转发记录，先移除冲突项，保留其他用途的记录。
 
-解析生效后，在仓库 Settings → Pages 等待证书签发并开启 Enforce HTTPS。浏览器访问域名后，最终地址栏显示学校官网地址。
+在仓库 Settings → Pages 保持 Enforce HTTPS 开启。HTTP 访问自动转为 HTTPS，`www` 地址自动转到根域名；页面随后跳转到学校官网。
 
 DNS 配置权威来源： https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
